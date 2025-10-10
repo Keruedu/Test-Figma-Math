@@ -1,0 +1,73 @@
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/preflight" layer(base);
+@import "tailwindcss/utilities" layer(utilities);
+
+body {
+  margin: 0;
+  background-color: #0a0323;
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: "Poppins", "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes fade-slide {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.animate-fade-slide {
+  animation: fade-slide 0.6s ease both;
+}
+
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animate-delay-600 {
+  animation-delay: 0.6s;
+}
+
+@keyframes confetti {
+  0% {
+    transform: translateY(-200%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(120%) rotate(360deg);
+  }
+}
+
+.confetti-piece {
+  animation: confetti 3.2s linear infinite;
+}
