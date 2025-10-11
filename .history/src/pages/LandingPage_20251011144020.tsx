@@ -746,7 +746,10 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
           {/* Achievements Section */}
           <div className="animate-fade-slide animate-delay-750">
             <div className="text-center mb-6 md:mb-8 px-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Thành tựu của bạn</h2>
+              <div className="flex items-center justify-center gap-3 mb-3">
+                <span className="text-3xl md:text-4xl">🏆</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Thành tựu của bạn</h2>
+              </div>
               <p className="text-sm md:text-base text-gray-600 mb-4">
                 Khám phá các cột mốc bạn đã đạt được và những thử thách đang chờ phía trước
               </p>
@@ -792,10 +795,11 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
                     ✓ Đã đạt
                   </div>
                   <div className="text-center mb-4">
-                    <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+                    <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center text-3xl md:text-4xl shadow-lg animate-pulse">
+                      🏅
                     </div>
                     <h3 className="text-base md:text-lg font-bold text-gray-900 mb-2">
-                      Hoàn thành bài đầu tiên
+                      Hoàn thành bài đầu tiên!
                     </h3>
                     <p className="text-xs md:text-sm text-gray-600 mb-3">
                       Chúc mừng! Bạn đã hoàn thành bài kiểm tra đầu tiên
@@ -820,7 +824,8 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
                 {/* Achievement 2 - In Progress */}
                 <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 shadow-lg border-2 border-gray-200 hover:scale-105 hover:border-[#6E55FB] transition-all cursor-pointer group">
                   <div className="text-center mb-4">
-                    <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center shadow-md">
+                    <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center text-3xl md:text-4xl shadow-md">
+                      🔥
                     </div>
                     <h3 className="text-base md:text-lg font-bold text-gray-900 mb-2">
                       Chuỗi học 7 ngày
@@ -851,7 +856,8 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
                     ✓ Đã đạt
                   </div>
                   <div className="text-center mb-4">
-                    <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center shadow-lg">
+                    <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center text-3xl md:text-4xl shadow-lg">
+                      ⭐
                     </div>
                     <h3 className="text-base md:text-lg font-bold text-gray-900 mb-2">
                       Điểm số hoàn hảo
@@ -877,12 +883,13 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
                 </div>
 
                 {/* Achievement 4 - Locked */}
-                <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 shadow-lg border-2 border-gray-200 hover:scale-105 hover:border-gray-300 transition-all cursor-pointer opacity-75 group relative">
-                  <div className="absolute top-3 right-3 text-gray-400 text-sm font-bold">
-                    🔒
+                <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 shadow-lg border-2 border-gray-200 hover:scale-105 hover:border-gray-300 transition-all cursor-pointer opacity-75 group">
+                  <div className="absolute top-3 right-3">
+                    <span className="text-2xl">🔒</span>
                   </div>
                   <div className="text-center mb-4">
-                    <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 bg-gray-200 rounded-full flex items-center justify-center shadow-md">
+                    <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 bg-gray-200 rounded-full flex items-center justify-center text-3xl md:text-4xl shadow-md grayscale">
+                      👑
                     </div>
                     <h3 className="text-base md:text-lg font-bold text-gray-500 mb-2">
                       Vua toán học
@@ -910,7 +917,8 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
                 {/* Achievement 5 - In Progress */}
                 <div className="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 shadow-lg border-2 border-gray-200 hover:scale-105 hover:border-[#6E55FB] transition-all cursor-pointer group">
                   <div className="text-center mb-4">
-                    <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center shadow-md">
+                    <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center text-3xl md:text-4xl shadow-md">
+                      🚀
                     </div>
                     <h3 className="text-base md:text-lg font-bold text-gray-900 mb-2">
                       Tốc độ ánh sáng
@@ -941,7 +949,8 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
                     ✓ Đã đạt
                   </div>
                   <div className="text-center mb-4">
-                    <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg">
+                    <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-3 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center text-3xl md:text-4xl shadow-lg">
+                      💯
                     </div>
                     <h3 className="text-base md:text-lg font-bold text-gray-900 mb-2">
                       Streak Master
@@ -971,7 +980,7 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
               <div className="mt-8 bg-gradient-to-br from-[#6E55FB] to-[#8b6fff] rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-2xl text-white">
                 <div className="flex items-center justify-between flex-wrap gap-4">
                   <div>
-                    <h3 className="text-xl md:text-2xl font-bold mb-2">Điểm thưởng & Token AI</h3>
+                    <h3 className="text-xl md:text-2xl font-bold mb-2">🎁 Điểm thưởng & Token AI</h3>
                     <p className="text-sm md:text-base opacity-90 mb-4">
                       Tổng điểm đã kiếm được từ các thành tựu
                     </p>
@@ -988,7 +997,7 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
                     </div>
                   </div>
                   <button className="bg-white text-[#6E55FB] font-bold py-3 px-6 md:px-8 rounded-xl hover:bg-gray-100 transition-all shadow-lg text-sm md:text-base">
-                    Đổi quà ngay
+                    💎 Đổi quà ngay
                   </button>
                 </div>
               </div>
@@ -996,7 +1005,7 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
               {/* Motivational Message */}
               <div className="mt-6 bg-purple-50 rounded-2xl p-4 md:p-6 border border-purple-100 text-center">
                 <p className="text-sm md:text-base text-gray-700">
-                  <span className="font-bold text-[#6E55FB]">Tiếp tục phấn đấu!</span> Bạn còn{' '}
+                  <span className="font-bold text-[#6E55FB]">💪 Tiếp tục phấn đấu!</span> Bạn còn{' '}
                   <span className="font-bold">8 thành tựu</span> đang chờ được mở khóa.
                 </p>
               </div>

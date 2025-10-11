@@ -971,6 +971,12 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
               <div className="mt-8 bg-gradient-to-br from-[#6E55FB] to-[#8b6fff] rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-2xl text-white">
                 <div className="flex items-center justify-between flex-wrap gap-4">
                   <div>
+                    <h3 className="text-xl md:text-2xl font-bold mb-2">🎁 Điểm thưởng & Token AI</h3>
+                    <p className="text-sm md:text-base opacity-90 mb-4">
+              {/* Reward Summary Card */}
+              <div className="mt-8 bg-gradient-to-br from-[#6E55FB] to-[#8b6fff] rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-2xl text-white">
+                <div className="flex items-center justify-between flex-wrap gap-4">
+                  <div>
                     <h3 className="text-xl md:text-2xl font-bold mb-2">Điểm thưởng & Token AI</h3>
                     <p className="text-sm md:text-base opacity-90 mb-4">
                       Tổng điểm đã kiếm được từ các thành tựu

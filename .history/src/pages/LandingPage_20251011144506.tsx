@@ -971,6 +971,12 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
               <div className="mt-8 bg-gradient-to-br from-[#6E55FB] to-[#8b6fff] rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-2xl text-white">
                 <div className="flex items-center justify-between flex-wrap gap-4">
                   <div>
+                    <h3 className="text-xl md:text-2xl font-bold mb-2">🎁 Điểm thưởng & Token AI</h3>
+                    <p className="text-sm md:text-base opacity-90 mb-4">
+              {/* Reward Summary Card */}
+              <div className="mt-8 bg-gradient-to-br from-[#6E55FB] to-[#8b6fff] rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-2xl text-white">
+                <div className="flex items-center justify-between flex-wrap gap-4">
+                  <div>
                     <h3 className="text-xl md:text-2xl font-bold mb-2">Điểm thưởng & Token AI</h3>
                     <p className="text-sm md:text-base opacity-90 mb-4">
                       Tổng điểm đã kiếm được từ các thành tựu
@@ -999,13 +1005,7 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
                   <span className="font-bold text-[#6E55FB]">Tiếp tục phấn đấu!</span> Bạn còn{' '}
                   <span className="font-bold">8 thành tựu</span> đang chờ được mở khóa.
                 </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Results Preview */}
-          <div className="animate-fade-slide animate-delay-800">
-            <div className="text-center mb-6 md:mb-8 px-4">
+              </div>ssName="text-center mb-6 md:mb-8 px-4">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">6️⃣ Kết quả chung cuộc</h2>
               <p className="text-sm md:text-base text-gray-600">Bục vinh quang và xếp hạng cuối cùng</p>
             </div>

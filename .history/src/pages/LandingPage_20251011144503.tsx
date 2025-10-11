@@ -971,7 +971,7 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
               <div className="mt-8 bg-gradient-to-br from-[#6E55FB] to-[#8b6fff] rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-2xl text-white">
                 <div className="flex items-center justify-between flex-wrap gap-4">
                   <div>
-                    <h3 className="text-xl md:text-2xl font-bold mb-2">Điểm thưởng & Token AI</h3>
+                    <h3 className="text-xl md:text-2xl font-bold mb-2">🎁 Điểm thưởng & Token AI</h3>
                     <p className="text-sm md:text-base opacity-90 mb-4">
                       Tổng điểm đã kiếm được từ các thành tựu
                     </p>
@@ -988,7 +988,7 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
                     </div>
                   </div>
                   <button className="bg-white text-[#6E55FB] font-bold py-3 px-6 md:px-8 rounded-xl hover:bg-gray-100 transition-all shadow-lg text-sm md:text-base">
-                    Đổi quà ngay
+                    💎 Đổi quà ngay
                   </button>
                 </div>
               </div>
@@ -996,7 +996,7 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
               {/* Motivational Message */}
               <div className="mt-6 bg-purple-50 rounded-2xl p-4 md:p-6 border border-purple-100 text-center">
                 <p className="text-sm md:text-base text-gray-700">
-                  <span className="font-bold text-[#6E55FB]">Tiếp tục phấn đấu!</span> Bạn còn{' '}
+                  <span className="font-bold text-[#6E55FB]">💪 Tiếp tục phấn đấu!</span> Bạn còn{' '}
                   <span className="font-bold">8 thành tựu</span> đang chờ được mở khóa.
                 </p>
               </div>
