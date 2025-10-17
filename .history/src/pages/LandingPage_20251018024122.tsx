@@ -133,8 +133,7 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
           <AdminNotifications />
 
           {/* Reward Conversion Settings */}
-          <RewardConversionSettings defaultTab="packages" />
-          <RewardConversionSettings defaultTab="rewards" />
+          <RewardConversionSettings />
 
           {/* Results Preview */}
           <ResultsPreview onNavigate={() => onNavigate('results')} />

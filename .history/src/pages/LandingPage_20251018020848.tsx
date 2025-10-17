@@ -8,8 +8,7 @@ import { TokenExchange } from '../components/landing/TokenExchange'
 import { AchievementsSection } from '../components/landing/AchievementsSection'
 import { ResultsPreview } from '../components/landing/ResultsPreview'
 import { RewardHistory } from '../components/landing/RewardHistory'
-import { AdminNotifications } from '../components/landing/AdminNotifications'
-import { RewardConversionSettings } from '../components/landing/RewardConversionSettings'
+
 interface LandingPageProps {
   onNavigate: (screen: GameScreen, questionIndex?: number) => void
 }
@@ -128,14 +127,7 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
           {/* Reward History - Default to Points tab */}
           <RewardHistory defaultTab="points" />
           <RewardHistory defaultTab="money" />
-
-          {/* Admin Notifications */}
-          <AdminNotifications />
-
-          {/* Reward Conversion Settings */}
-          <RewardConversionSettings defaultTab="packages" />
-          <RewardConversionSettings defaultTab="rewards" />
-
+          
           {/* Results Preview */}
           <ResultsPreview onNavigate={() => onNavigate('results')} />
 
