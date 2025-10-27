@@ -23,6 +23,14 @@ function App() {
     { id: '8', name: 'Nam', avatar: '🚀', score: 0 },
   ])
 
+  const handleNavigate = (screen: GameScreen, questionIndex?: number) => {
+    setShowLanding(false)
+    setCurrentScreen(screen)
+    if (questionIndex !== undefined) {
+      setCurrentQuestionIndex(questionIndex)
+    }
+  }
+
   const handleStartGame = () => {
     setCurrentScreen('game')
     setCurrentQuestionIndex(0)
