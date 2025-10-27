@@ -1,4 +1,9 @@
+import type { GameScreen } from '../types'
 import ExamScreen from './ExamScreen'
+
+interface LandingPageProps {
+  onNavigate: (screen: GameScreen, questionIndex?: number) => void
+}
 
 export const LandingPage = () => {
   return (
@@ -9,7 +14,7 @@ export const LandingPage = () => {
         <ExamScreen />
         
         {/* Hoặc có thể chọn hiển thị tab AI */}
-        <ExamScreen initialTab="ai" />
+        {/* <ExamScreen initialTab="ai" /> */}
       </div>
     </div>
   )

@@ -9,7 +9,7 @@ export const LandingPage = () => {
         <ExamScreen />
         
         {/* Hoặc có thể chọn hiển thị tab AI */}
-        <ExamScreen initialTab="ai" />
+        {/* <ExamScreen initialTab="ai" /> */}
       </div>
     </div>
   )
