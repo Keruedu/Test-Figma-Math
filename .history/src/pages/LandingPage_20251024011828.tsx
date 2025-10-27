@@ -10,7 +10,6 @@ import { ResultsPreview } from '../components/landing/ResultsPreview'
 import { RewardHistory } from '../components/landing/RewardHistory'
 import { AdminNotifications } from '../components/landing/AdminNotifications'
 import { RewardConversionSettings } from '../components/landing/RewardConversionSettings'
-import ExamScreen from './ExamScreen'
 interface LandingPageProps {
   onNavigate: (screen: GameScreen, questionIndex?: number) => void
 }
@@ -84,13 +83,70 @@ const questionTypes = [
 export const LandingPage = ({ onNavigate }: LandingPageProps) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-purple-50 to-blue-50 relative overflow-hidden">
+      <AnimatedBackground />
 
-      <div className="relative z-10 container mx-auto px-4">
-        {/* Mặc định hiển thị tab Hệ thống */}
-        <ExamScreen />
-        
-        {/* Hoặc có thể chọn hiển thị tab AI */}
-        <ExamScreen initialTab="ai" />
+      <div className="relative z-10 container mx-auto px-4 py-8 md:py-12">
+        {/* Header */}
+        <div className="text-center mb-12 md:mb-16 animate-fade-slide">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-gray-900 mb-3 md:mb-4 drop-shadow-lg px-4">
+            ⚔️ Đấu Trường Toán Học
+          </h1>
+          <p className="text-base md:text-xl lg:text-2xl text-gray-600 mb-6 md:mb-8 px-4">
+            Math Battle Arena - Nền tảng học toán tương tác như Kahoot!
+          </p>
+          <button
+            onClick={() => onNavigate('lobby')}
+            className="bg-gradient-to-r from-[#6E55FB] to-[#8b6fff] text-white text-base md:text-xl font-bold py-3 px-8 md:py-4 md:px-12 rounded-xl hover:shadow-lg hover:shadow-[#6E55FB]/50 transition-all transform hover:scale-105 active:scale-95"
+          >
+            🚀 Bắt đầu trải nghiệm
+          </button>
+        </div>
+        {/* Screen Previews */}
+        <div className="space-y-12 md:space-y-16">
+{/* 
+
+          {/* Lobby Preview */}
+          <LobbyPreview onNavigate={() => onNavigate('lobby')} />
+
+          {/* Question Types Preview */}
+          <QuestionPreview
+            questions={questionTypes}
+            onQuestionClick={(questionId) => onNavigate('game', questionId)}
+          />
+
+          {/* Leaderboard Preview */}
+          <LeaderboardPreview onNavigate={() => onNavigate('leaderboard')} />
+
+          {/* Payment Plans */}
+          <PaymentPlans />
+
+          {/* Token Exchange */}
+          <TokenExchange />
+
+          {/* Achievements Section */}
+          <AchievementsSection />
+
+          {/* Reward History - Default to Points tab */}
+          <RewardHistory defaultTab="points" />
+          <RewardHistory defaultTab="money" />
+
+          {/* Admin Notifications */}
+          <AdminNotifications />
+
+          {/* Reward Conversion Settings */}
+          <RewardConversionSettings defaultTab="packages" />
+          <RewardConversionSettings defaultTab="rewards" />
+
+          {/* Results Preview */}
+          <ResultsPreview onNavigate={() => onNavigate('results')} />
+
+*/}
+        </div>
+
+        {/* Footer */}
+        <div className="text-center mt-12 md:mt-16 pb-6 md:pb-8">
+          <p className="text-gray-500 text-xs md:text-sm px-4">Thiết kế bởi Tailwind CSS • Màu chủ đạo: #6E55FB</p>
+        </div>
       </div>
     </div>
   )

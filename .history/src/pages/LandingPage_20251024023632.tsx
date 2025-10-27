@@ -10,7 +10,7 @@ import { ResultsPreview } from '../components/landing/ResultsPreview'
 import { RewardHistory } from '../components/landing/RewardHistory'
 import { AdminNotifications } from '../components/landing/AdminNotifications'
 import { RewardConversionSettings } from '../components/landing/RewardConversionSettings'
-import ExamScreen from './ExamScreen'
+import { ExamScreen } from './ExamScreen'
 interface LandingPageProps {
   onNavigate: (screen: GameScreen, questionIndex?: number) => void
 }
@@ -85,12 +85,8 @@ export const LandingPage = ({ onNavigate }: LandingPageProps) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-purple-50 to-blue-50 relative overflow-hidden">
 
-      <div className="relative z-10 container mx-auto px-4">
-        {/* Mặc định hiển thị tab Hệ thống */}
-        <ExamScreen />
-        
-        {/* Hoặc có thể chọn hiển thị tab AI */}
-        <ExamScreen initialTab="ai" />
+      <div className="relative z-10 mx-auto px-4 py-8 md:py-12">
+        <ExamScreen></ExamScreen>
       </div>
     </div>
   )

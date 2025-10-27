@@ -1,0 +1,34 @@
+          {/* Lobby Preview */}
+          <LobbyPreview onNavigate={() => onNavigate('lobby')} />
+
+          {/* Question Types Preview */}
+          <QuestionPreview
+            questions={questionTypes}
+            onQuestionClick={(questionId) => onNavigate('game', questionId)}
+          />
+
+          {/* Leaderboard Preview */}
+          <LeaderboardPreview onNavigate={() => onNavigate('leaderboard')} />
+
+          {/* Payment Plans */}
+          <PaymentPlans />
+
+          {/* Token Exchange */}
+          <TokenExchange />
+
+          {/* Achievements Section */}
+          <AchievementsSection />
+
+          {/* Reward History - Default to Points tab */}
+          <RewardHistory defaultTab="points" />
+          <RewardHistory defaultTab="money" />
+
+          {/* Admin Notifications */}
+          <AdminNotifications />
+
+          {/* Reward Conversion Settings */}
+          <RewardConversionSettings defaultTab="packages" />
+          <RewardConversionSettings defaultTab="rewards" />
+
+          {/* Results Preview */}
+          <ResultsPreview onNavigate={() => onNavigate('results')} />
